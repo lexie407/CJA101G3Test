@@ -1,28 +1,33 @@
 package com.dukak.forum.model;
 
 public class ArticlePicturesVO {
-	private Integer pic_id;
-	private Integer art_id;
+	private Integer picId;
+	private Integer artId;
 	private byte[] picture;
-	
+
 	public ArticlePicturesVO() {
 		super();
 	}
 
-	public Integer getPic_id() {
-		return pic_id;
+	public ArticlePicturesVO(Integer picId, Integer artId) {
+		setPicId(picId);
+		setArtId(artId);
 	}
 
-	public void setPic_id(Integer pic_id) {
-		this.pic_id = pic_id;
+	public Integer getPicId() {
+		return picId;
 	}
 
-	public Integer getArt_id() {
-		return art_id;
+	public void setPicId(Integer picId) {
+		this.picId = picId;
 	}
 
-	public void setArt_id(Integer art_id) {
-		this.art_id = art_id;
+	public Integer getArtId() {
+		return artId;
+	}
+
+	public void setArtId(Integer artId) {
+		this.artId = artId;
 	}
 
 	public byte[] getPicture() {
@@ -32,7 +37,5 @@ public class ArticlePicturesVO {
 	public void setPicture(byte[] picture) {
 		this.picture = picture;
 	}
-	
-	
 
 }
