@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 public class GroupActivityVO implements Serializable{
 	private Integer actId;
 	private String actName;
-	private String desc;
+	private String actDesc;
 	private String imgPath;
 	private Integer itnId;
 	private Integer hostId;
@@ -33,11 +33,11 @@ public class GroupActivityVO implements Serializable{
 	public void setActName(String actName) {
 		this.actName = actName;
 	}
-	public String getDesc() {
-		return desc;
+	public String getActDesc() {
+		return actDesc;
 	}
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setActDesc(String desc) {
+		this.actDesc = desc;
 	}
 	public String getImgPath() {
 		return imgPath;
